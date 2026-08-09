@@ -23,9 +23,9 @@ export const projects: Project[] = [
     shortDescription:
       "Landing page responsiva para barbearia com serviços, preços e contato direto por WhatsApp.",
     problem:
-      "Uma barbearia precisa apresentar serviços, preços e localização de forma simples para atrair clientes sem perder tempo com mensagens desconectadas.",
+      "Uma barbearia precisava mostrar serviços, preços e localização de forma simples, sem depender de mensagens dispersas ou de uma presença digital fraca.",
     solution:
-      "Página responsiva com seções claras de serviços, preços, localização e botão direto para contato no WhatsApp.",
+      "Criei uma landing page responsiva, com seções claras para serviços, valores, localização e um botão direto para WhatsApp, oferecendo uma experiência mais objetiva para clientes em busca de agendamento.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
     image: "/projects/project-barbearia.svg",
     liveUrl: "/projetos/barbearia",
@@ -34,20 +34,31 @@ export const projects: Project[] = [
     status: "Projeto demonstrativo",
   },
   {
-    id: "visao-vendas",
-    title: "Visão de Vendas",
+    id: "top-analytics",
+    title: "TOP Analytics",
     slug: "dashboard-vendas",
-    category: "Dashboard",
+    category: "Análise de dados",
     shortDescription:
-      "Dashboard com indicadores de faturamento, vendas e produtos mais vendidos para pequenos negócios.",
+      "Pipeline de EDA de vendas de eletrônicos com validação automática de qualidade e um dashboard executivo interativo.",
     problem:
-      "Um pequeno negócio precisa visualizar vendas, faturamento e produtos mais vendidos, mas os números estavam espalhados em planilhas.",
+      "Planilhas de vendas brutas costumam chegar com dados inconsistentes, como formatos numéricos diferentes, textos mal padronizados e campos ausentes, dificultando análises confiáveis e a geração de indicadores de negócio.",
     solution:
-      "Painel com indicadores, gráficos e filtros usando dados fictícios para mostrar resultados de forma simples e útil.",
-    technologies: ["React", "TypeScript", "Recharts", "Tailwind CSS"],
+      "Criei um pipeline em Python com Pandas e Pandera para padronizar e validar os dados, converter a planilha Excel em banco SQLite, calcular indicadores de participação por região, vendedor e período, além de auditar pendências de qualidade automaticamente. Os resultados alimentam tanto o Power BI quanto um dashboard web próprio com Dash e Plotly, sem necessidade de reprocessamento.",
+    technologies: [
+      "Python",
+      "Pandas",
+      "Pandera",
+      "SQLite",
+      "openpyxl",
+      "Dash",
+      "Plotly",
+      "dash-bootstrap-components",
+      "pytest",
+      "GitHub Actions",
+    ],
     image: "/projects/project-dashboard-vendas.svg",
-    liveUrl: "/projetos/dashboard-vendas",
-    repositoryUrl: "",
+    liveUrl: "https://pedroestevam.pythonanywhere.com",
+    repositoryUrl: "https://github.com/Kelly-0W/Projeto-analise-de-dados",
     featured: true,
     status: "Projeto demonstrativo",
   },
@@ -59,9 +70,9 @@ export const projects: Project[] = [
     shortDescription:
       "Interface leve para registrar entradas, saídas e produtos que precisam de atenção no estoque.",
     problem:
-      "Um pequeno negócio registra entradas e saídas manualmente e tem dificuldade para identificar produtos parados no estoque.",
+      "Um pequeno negócio precisava controlar entradas, saídas e produtos parados no estoque sem depender apenas de anotações manuais e de uma rotina pouco organizada.",
     solution:
-      "Interface para registrar movimentações e destacar itens com baixa rotação ou estoque baixo.",
+      "Implementei uma interface simples para registrar movimentações, acompanhar o estoque e destacar itens com baixa rotação ou estoque baixo, tornando a rotina mais visual e objetiva.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "LocalStorage"],
     image: "/projects/project-controle-estoque.svg",
     liveUrl: "/projetos/controle-estoque",

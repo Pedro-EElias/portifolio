@@ -31,7 +31,7 @@ export function ProjectDetails({ project }: { project: Project }) {
           <div className="flex flex-col gap-4 rounded-3xl border border-border bg-surface p-6 shadow-sm">
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground">Projeto demonstrativo</p>
-              <p className="text-lg font-semibold text-foreground">Resumo rápido</p>
+              <p className="text-lg font-semibold text-foreground">Visão geral do projeto</p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
               <Card className="p-4">
@@ -94,8 +94,7 @@ export function ProjectDetails({ project }: { project: Project }) {
             <Card>
               <h2 className="text-2xl font-semibold text-foreground">Como funciona</h2>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                Esta página apresenta o projeto demonstrativo com foco em entrega rápida, navegação
-                simples e resultados que ajudam pequenos negócios a tomar decisão.
+                O projeto reúne um pipeline de análise, validação automática de qualidade e uma camada visual interativa para transformar dados de vendas em uma experiência executiva mais clara e confiável.
               </p>
             </Card>
           </div>
