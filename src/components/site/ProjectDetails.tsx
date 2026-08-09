@@ -30,7 +30,11 @@ export function ProjectDetails({ project }: { project: Project }) {
           </div>
           <div className="flex flex-col gap-4 rounded-3xl border border-border bg-surface p-6 shadow-sm">
             <div className="space-y-3">
+<<<<<<< HEAD
               <p className="text-sm text-muted-foreground">Demonstração interna</p>
+=======
+              <p className="text-sm text-muted-foreground">Projeto demonstrativo</p>
+>>>>>>> ab482e6 (corrigindo erro de mostragem de projeto)
               <p className="text-lg font-semibold text-foreground">Resumo rápido</p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
@@ -56,7 +60,11 @@ export function ProjectDetails({ project }: { project: Project }) {
                   target={liveIsExternal ? "_blank" : undefined}
                   rel={liveIsExternal ? "noreferrer noopener" : undefined}
                 >
+<<<<<<< HEAD
                   Ver exemplo
+=======
+                  Ver demonstração
+>>>>>>> ab482e6 (corrigindo erro de mostragem de projeto)
                   <ArrowUpRight size={14} />
                 </Button>
               ) : null}
@@ -94,17 +102,51 @@ export function ProjectDetails({ project }: { project: Project }) {
             <Card>
               <h2 className="text-2xl font-semibold text-foreground">Como funciona</h2>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+<<<<<<< HEAD
                 Esta página apresenta o projeto demonstrativo com foco em entrega rápida, navegação
                 simples e resultados que ajudam pequenos negócios a tomar decisão.
+=======
+                Este projeto demonstrativo reúne a proposta de pipeline de dados e dashboard
+                executivo em uma experiência simples, com foco em clareza, rastreabilidade e
+                validação automática.
+>>>>>>> ab482e6 (corrigindo erro de mostragem de projeto)
               </p>
             </Card>
           </div>
           <div className="space-y-6">
+<<<<<<< HEAD
             <img
               src={project.image}
               alt={`Imagem do projeto ${project.title}`}
               className="w-full rounded-3xl border border-border bg-surface object-cover shadow-sm"
             />
+=======
+            <Card className="overflow-hidden p-0">
+              <div className="border-b border-border bg-surface-2/60 p-4">
+                <h3 className="text-lg font-semibold text-foreground">Pré-visualização</h3>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Uma visão rápida do conceito visual do projeto.
+                </p>
+              </div>
+              {liveIsExternal ? (
+                <div className="relative aspect-[800/500] w-full overflow-hidden bg-surface">
+                  <iframe
+                    src={project.liveUrl}
+                    title={`Demonstração ao vivo de ${project.title}`}
+                    className="absolute left-0 top-0 h-[142.85%] w-[142.85%] origin-top-left border-0"
+                    style={{ transform: "scale(0.7)" }}
+                    loading="lazy"
+                  />
+                </div>
+              ) : (
+                <img
+                  src={project.image}
+                  alt={`Pré-visualização do projeto ${project.title}`}
+                  className="block aspect-[800/500] w-full border-0 bg-surface object-cover"
+                />
+              )}
+            </Card>
+>>>>>>> ab482e6 (corrigindo erro de mostragem de projeto)
             <Card>
               <h3 className="text-lg font-semibold text-foreground">Tecnologias usadas</h3>
               <ul className="mt-4 grid gap-2 text-sm text-muted-foreground">

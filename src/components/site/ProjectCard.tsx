@@ -7,9 +7,14 @@ import { ArrowUpRight, Code2 } from "lucide-react";
 const isExternal = (url: string) => /^https?:\/\//.test(url);
 
 export function ProjectCard({ project }: { project: Project }) {
+<<<<<<< HEAD
   const hasLive = Boolean(project.liveUrl);
   const hasRepo = Boolean(project.repositoryUrl);
   const liveIsExternal = hasLive && isExternal(project.liveUrl);
+=======
+  const hasRepo = Boolean(project.repositoryUrl);
+  const projectDetailsUrl = `/projetos/${project.slug}`;
+>>>>>>> ab482e6 (corrigindo erro de mostragem de projeto)
 
   return (
     <Card className="flex flex-col">
@@ -34,6 +39,7 @@ export function ProjectCard({ project }: { project: Project }) {
         ))}
       </div>
       <div className="mt-6 flex flex-col gap-2 pt-1 sm:flex-row sm:flex-wrap">
+<<<<<<< HEAD
         {hasLive ? (
           <Button
             href={project.liveUrl}
@@ -46,6 +52,12 @@ export function ProjectCard({ project }: { project: Project }) {
             <ArrowUpRight size={14} />
           </Button>
         ) : null}
+=======
+        <Button href={projectDetailsUrl} variant="solid" size="sm">
+          Ver mais
+          <ArrowUpRight size={14} />
+        </Button>
+>>>>>>> ab482e6 (corrigindo erro de mostragem de projeto)
         {hasRepo ? (
           <Button
             href={project.repositoryUrl}
