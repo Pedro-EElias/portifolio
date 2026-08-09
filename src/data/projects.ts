@@ -34,7 +34,6 @@ export const projects: Project[] = [
     status: "Projeto demonstrativo",
   },
   {
-<<<<<<< HEAD
     id: "visao-vendas",
     title: "Visão de Vendas",
     slug: "dashboard-vendas",
@@ -49,33 +48,6 @@ export const projects: Project[] = [
     image: "/projects/project-dashboard-vendas.svg",
     liveUrl: "/projetos/dashboard-vendas",
     repositoryUrl: "",
-=======
-    id: "top-analytics",
-    title: "TOP Analytics",
-    slug: "dashboard-vendas",
-    category: "Análise de dados",
-    shortDescription:
-      "Pipeline de EDA para vendas de eletrônicos, com validação automática de qualidade e um dashboard executivo interativo.",
-    problem:
-      "Planilhas de vendas brutas costumam vir com dados inconsistentes, como formatos numéricos diferentes, textos mal padronizados e campos ausentes, dificultando análises confiáveis e a geração de indicadores de negócio.",
-    solution:
-      "Pipeline em Python com Pandas e Pandera para padronizar e validar os dados, converter a planilha Excel em banco SQLite, calcular indicadores de participação por região, vendedor e período, além de auditar pendências de qualidade automaticamente. Os resultados alimentam o Power BI e um dashboard web próprio com Dash e Plotly, sem necessidade de reprocessamento.",
-    technologies: [
-      "Python",
-      "Pandas",
-      "Pandera",
-      "SQLite",
-      "openpyxl",
-      "Dash",
-      "Plotly",
-      "dash-bootstrap-components",
-      "pytest",
-      "GitHub Actions",
-    ],
-    image: "/projects/project-dashboard-vendas.svg",
-    liveUrl: "https://pedroestevam.pythonanywhere.com",
-    repositoryUrl: "https://github.com/Pedro-EElias/top_analytics",
->>>>>>> ab482e6 (corrigindo erro de mostragem de projeto)
     featured: true,
     status: "Projeto demonstrativo",
   },

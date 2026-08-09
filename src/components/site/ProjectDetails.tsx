@@ -2,13 +2,13 @@ import type { Project } from "@/data/projects";
 import { Button } from "./Button";
 import { Badge } from "./Badge";
 import { SectionTitle } from "./SectionTitle";
-import { Card, Section } from "./ui";
+import { Card } from "./ui";
 import { ArrowUpRight, Code2, ArrowLeft } from "lucide-react";
 
 const isExternal = (url: string) => /^https?:\/\//.test(url);
 
 export function ProjectDetails({ project }: { project: Project }) {
-  const liveIsExternal = project.liveUrl && isExternal(project.liveUrl);
+  const liveIsExternal = Boolean(project.liveUrl && isExternal(project.liveUrl));
 
   return (
     <main className="min-h-screen bg-background px-6 py-24 lg:px-10">
@@ -30,11 +30,7 @@ export function ProjectDetails({ project }: { project: Project }) {
           </div>
           <div className="flex flex-col gap-4 rounded-3xl border border-border bg-surface p-6 shadow-sm">
             <div className="space-y-3">
-<<<<<<< HEAD
-              <p className="text-sm text-muted-foreground">Demonstração interna</p>
-=======
               <p className="text-sm text-muted-foreground">Projeto demonstrativo</p>
->>>>>>> ab482e6 (corrigindo erro de mostragem de projeto)
               <p className="text-lg font-semibold text-foreground">Resumo rápido</p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
@@ -60,11 +56,7 @@ export function ProjectDetails({ project }: { project: Project }) {
                   target={liveIsExternal ? "_blank" : undefined}
                   rel={liveIsExternal ? "noreferrer noopener" : undefined}
                 >
-<<<<<<< HEAD
-                  Ver exemplo
-=======
                   Ver demonstração
->>>>>>> ab482e6 (corrigindo erro de mostragem de projeto)
                   <ArrowUpRight size={14} />
                 </Button>
               ) : null}
@@ -102,25 +94,12 @@ export function ProjectDetails({ project }: { project: Project }) {
             <Card>
               <h2 className="text-2xl font-semibold text-foreground">Como funciona</h2>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-<<<<<<< HEAD
                 Esta página apresenta o projeto demonstrativo com foco em entrega rápida, navegação
                 simples e resultados que ajudam pequenos negócios a tomar decisão.
-=======
-                Este projeto demonstrativo reúne a proposta de pipeline de dados e dashboard
-                executivo em uma experiência simples, com foco em clareza, rastreabilidade e
-                validação automática.
->>>>>>> ab482e6 (corrigindo erro de mostragem de projeto)
               </p>
             </Card>
           </div>
           <div className="space-y-6">
-<<<<<<< HEAD
-            <img
-              src={project.image}
-              alt={`Imagem do projeto ${project.title}`}
-              className="w-full rounded-3xl border border-border bg-surface object-cover shadow-sm"
-            />
-=======
             <Card className="overflow-hidden p-0">
               <div className="border-b border-border bg-surface-2/60 p-4">
                 <h3 className="text-lg font-semibold text-foreground">Pré-visualização</h3>
@@ -146,7 +125,6 @@ export function ProjectDetails({ project }: { project: Project }) {
                 />
               )}
             </Card>
->>>>>>> ab482e6 (corrigindo erro de mostragem de projeto)
             <Card>
               <h3 className="text-lg font-semibold text-foreground">Tecnologias usadas</h3>
               <ul className="mt-4 grid gap-2 text-sm text-muted-foreground">

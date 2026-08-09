@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Visão de Vendas">
-=======
-<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Visão de Vendas" preserveAspectRatio="xMidYMid slice">
->>>>>>> ab482e6 (corrigindo erro de mostragem de projeto)
   <rect width="800" height="500" fill="#1c1214"/>
   <rect width="800" height="500" fill="url(#g)" opacity="0.5"/>
   <defs>
