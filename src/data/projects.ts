@@ -80,4 +80,34 @@ export const projects: Project[] = [
     featured: true,
     status: "Projeto demonstrativo",
   },
+  {
+    id: "loja-lumiere",
+    title: "Loja Lumiere",
+    slug: "loja-lumiere",
+    category: "Site (e-commerce)",
+    shortDescription:
+      "Protótipo visual de e-commerce de maquiagem com catálogo, página de produto, carrinho, checkout simulado e painel administrativo básico.",
+    problem:
+      "Demonstrar a experiência completa de compra de uma loja online sem depender de um backend real, servindo como base visual para integração futura com API e pagamento.",
+    solution:
+      "Criei uma experiência full-stack com TanStack Start, TanStack Router, TanStack Query e React 19, com catálogo com filtros, página de produto, carrinho persistido em localStorage, resumo de pedido, telas demonstrativas de login/cadastro e um painel administrativo com métricas e pedidos simulados.",
+    technologies: [
+      "TanStack Start",
+      "TanStack Router",
+      "TanStack Query",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS 4",
+      "shadcn/ui",
+      "Radix UI",
+      "Vitest",
+      "Vite",
+      "Nitro",
+    ],
+    image: "/projects/project-loja-lumiere.svg",
+    liveUrl: "https://lumiere-maquiagem-website.vercel.app/",
+    repositoryUrl: "https://github.com/Pedro-EElias/lumiere",
+    featured: true,
+    status: "Projeto demonstrativo",
+  },
 ];

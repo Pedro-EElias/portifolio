@@ -94,7 +94,7 @@ export function ProjectDetails({ project }: { project: Project }) {
             <Card>
               <h2 className="text-2xl font-semibold text-foreground">Como funciona</h2>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                O projeto reúne um pipeline de análise, validação automática de qualidade e uma camada visual interativa para transformar dados de vendas em uma experiência executiva mais clara e confiável.
+                {project.solution}
               </p>
             </Card>
           </div>

@@ -4,9 +4,13 @@ import { Badge } from "./Badge";
 import { Card } from "./ui";
 import { ArrowUpRight, Code2 } from "lucide-react";
 
+const isExternal = (url: string) => /^https?:\/\//.test(url);
+
 export function ProjectCard({ project }: { project: Project }) {
   const hasRepo = Boolean(project.repositoryUrl);
+  const hasLiveUrl = Boolean(project.liveUrl);
   const projectDetailsUrl = `/projetos/${project.slug}`;
+  const liveIsExternal = Boolean(project.liveUrl && isExternal(project.liveUrl));
 
   return (
     <Card className="flex flex-col">
@@ -35,6 +39,18 @@ export function ProjectCard({ project }: { project: Project }) {
           Ver mais
           <ArrowUpRight size={14} />
         </Button>
+        {hasLiveUrl ? (
+          <Button
+            href={project.liveUrl}
+            variant="outline"
+            size="sm"
+            target={liveIsExternal ? "_blank" : undefined}
+            rel={liveIsExternal ? "noreferrer noopener" : undefined}
+          >
+            Ver demonstração
+            <ArrowUpRight size={14} />
+          </Button>
+        ) : null}
         {hasRepo ? (
           <Button
             href={project.repositoryUrl}
