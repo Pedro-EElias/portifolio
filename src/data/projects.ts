@@ -84,13 +84,13 @@ export const projects: Project[] = [
     id: "loja-lumiere",
     title: "Loja Lumiere",
     slug: "loja-lumiere",
-    category: "Site (e-commerce)",
+    category: "Landing page",
     shortDescription:
-      "Protótipo visual de e-commerce de maquiagem com catálogo, página de produto, carrinho, checkout simulado e painel administrativo básico.",
+      "Landing page de uma loja de maquiagem com apresentação visual da marca, produtos principais, benefícios e uma jornada de compra simulada.",
     problem:
-      "Demonstrar a experiência completa de compra de uma loja online sem depender de um backend real, servindo como base visual para integração futura com API e pagamento.",
+      "Apresentar uma loja online de forma elegante e objetiva, mostrando a proposta da marca e conduzindo o visitante por uma experiência de compra simplificada sem depender de um backend real.",
     solution:
-      "Criei uma experiência full-stack com TanStack Start, TanStack Router, TanStack Query e React 19, com catálogo com filtros, página de produto, carrinho persistido em localStorage, resumo de pedido, telas demonstrativas de login/cadastro e um painel administrativo com métricas e pedidos simulados.",
+      "Criei uma landing page com foco em conversão, com catálogo visual, páginas de produto, carrinho, checkout simulado e elementos de identidade da marca, tudo com uma interface limpa e pronta para evoluir para uma integração real.",
     technologies: [
       "TanStack Start",
       "TanStack Router",
