@@ -92,22 +92,4 @@ export const projects: Project[] = [
     featured: true,
     status: "Projeto demonstrativo",
   },
-  {
-    id: "agenda-barber",
-    title: "Agenda Barber",
-    slug: "barbearia",
-    category: "Landing page",
-    shortDescription:
-      "Landing page responsiva para barbearia com serviços, preços e contato direto por WhatsApp.",
-    problem:
-      "Uma barbearia precisava mostrar serviços, preços e localização de forma simples, sem depender de mensagens dispersas ou de uma presença digital fraca.",
-    solution:
-      "Criei uma landing page responsiva, com seções claras para serviços, valores, localização e um botão direto para WhatsApp, oferecendo uma experiência mais objetiva para clientes em busca de agendamento.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-    image: "/projects/project-barbearia.svg",
-    liveUrl: "/projetos/barbearia",
-    repositoryUrl: "",
-    featured: false,
-    status: "Projeto demonstrativo",
-  },
 ];
