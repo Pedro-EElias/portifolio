@@ -11,7 +11,7 @@ export function ProjectDetails({ project }: { project: Project }) {
   const liveIsExternal = Boolean(project.liveUrl && isExternal(project.liveUrl));
 
   return (
-    <main className="min-h-screen bg-background px-6 py-24 lg:px-10">
+    <main id="main-content" className="min-h-screen bg-background px-6 py-24 lg:px-10">
       <section className="mx-auto w-full max-w-6xl">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
           <div>
@@ -55,6 +55,11 @@ export function ProjectDetails({ project }: { project: Project }) {
                   size="sm"
                   target={liveIsExternal ? "_blank" : undefined}
                   rel={liveIsExternal ? "noreferrer noopener" : undefined}
+                  aria-label={
+                    liveIsExternal
+                      ? `Ver demonstração do ${project.title} (abre em nova aba)`
+                      : `Ver demonstração do ${project.title}`
+                  }
                 >
                   Ver demonstração
                   <ArrowUpRight size={14} />
@@ -67,6 +72,7 @@ export function ProjectDetails({ project }: { project: Project }) {
                   size="sm"
                   target="_blank"
                   rel="noreferrer noopener"
+                  aria-label={`Ver código do ${project.title} no GitHub (abre em nova aba)`}
                 >
                   <Code2 size={14} /> Ver código
                 </Button>

@@ -46,6 +46,11 @@ export function ProjectCard({ project }: { project: Project }) {
             size="sm"
             target={liveIsExternal ? "_blank" : undefined}
             rel={liveIsExternal ? "noreferrer noopener" : undefined}
+            aria-label={
+              liveIsExternal
+                ? `Ver demonstração de ${project.title} (abre em nova aba)`
+                : `Ver demonstração de ${project.title}`
+            }
           >
             Ver demonstração
             <ArrowUpRight size={14} />
@@ -58,6 +63,7 @@ export function ProjectCard({ project }: { project: Project }) {
             size="sm"
             target="_blank"
             rel="noreferrer noopener"
+            aria-label={`Ver código de ${project.title} no GitHub (abre em nova aba)`}
           >
             <Code2 size={14} /> Ver código
           </Button>

@@ -47,14 +47,14 @@ O site sobe em modo desenvolvimento com hot reload.
 
 ## Scripts disponíveis
 
-| Comando | Descrição |
-| --- | --- |
-| `npm run dev` | Sobe o servidor de desenvolvimento |
-| `npm run build` | Gera o build de produção |
+| Comando             | Descrição                             |
+| ------------------- | ------------------------------------- |
+| `npm run dev`       | Sobe o servidor de desenvolvimento    |
+| `npm run build`     | Gera o build de produção              |
 | `npm run build:dev` | Build em modo desenvolvimento (debug) |
-| `npm run preview` | Serve o build de produção localmente |
-| `npm run lint` | Roda o ESLint |
-| `npm run format` | Formata o código com Prettier |
+| `npm run preview`   | Serve o build de produção localmente  |
+| `npm run lint`      | Roda o ESLint                         |
+| `npm run format`    | Formata o código com Prettier         |
 
 ## Editando conteúdo
 
